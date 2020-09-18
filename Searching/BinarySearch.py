@@ -1,17 +1,17 @@
-# def BinarySearch(arr,target):
-# 	arr.sort()
-# 	l=0
-# 	r=len(arr)-1
-# 	while(l<=r):
-# 		mid = (l+r)//2
-# 		if(arr[mid] == target):
-# 			print("Found Element",arr[mid],"At index",mid)
-# 			return
-# 		elif(arr[mid] > target):
-# 			r = mid-1
-# 		else:
-# 			l = mid+1
-# 	print("Not Found")
+def BinarySearch(arr,target):
+	arr.sort()
+	l=0
+	r=len(arr)-1
+	while(l<=r):
+		mid = (l+r)//2
+		if(arr[mid] == target):
+			print("Found Element",arr[mid],"At index",mid)
+			return
+		elif(arr[mid] > target):
+			r = mid-1
+		else:
+			l = mid+1
+	print("Not Found")
 
 
 
