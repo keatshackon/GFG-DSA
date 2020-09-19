@@ -13,13 +13,13 @@ void inorder(Node *root){
 	if(root == NULL){
 		return;
 	}
-	//Order To Traverse The Tree In Ineorder Traversal!
-	inorder(root->left);
+	//Order To Traverse The Tree In Preorder Traversal!
 	printf("%d ",root->data);
+	inorder(root->left);
 	inorder(root->right);
+	
+	
 }
-
-
 
 int  main(){
 	Node *root = new Node(10);
