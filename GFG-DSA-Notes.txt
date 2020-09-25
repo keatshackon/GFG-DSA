@@ -1,0 +1,12 @@
+1>> To represent the Self Balancing Binary tree we use
+	MAP and SET in c++ ; and TREESET and TREEMAP in java!
+
+2>> Tree Traversal use two algorithm Named BFS and 	  	  DFS to traverse all the node in tree!
+
+3>>	BFS traversal is also known as levelorder
+	traversal!
+
+4>> DFS traversal is again divided into three types named :::> 
+	1> InOrder
+	2> preOrder
+	3> PostOrder
