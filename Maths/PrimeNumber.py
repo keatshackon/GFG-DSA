@@ -15,8 +15,6 @@ def prime(n):
 
 
 
-
-
 if __name__ == '__main__':
 	t0 = time.time()
 	
