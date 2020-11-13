@@ -1,7 +1,7 @@
 1>> To represent the Self Balancing Binary tree we use
 	MAP and SET in c++ ; and TREESET and TREEMAP in java!
 
-2>> Tree Traversal use two algorithm Named BFS and 	  	  DFS to traverse all the node in tree!
+2>> Tree Traversal use two algorithm Named BFS and 	DFS to traverse all the node in tree!
 
 3>>	BFS traversal is also known as levelorder
 	traversal!
@@ -27,3 +27,14 @@
 
 5>> x = (x<<1) + x + (x>>1); THIS EXPRESSION USED TO MULTIPLE THE NUMBER X TO 3.5 without using [%,/,*] operator!
 =======================================================================================================================================
+														MATHEMATICS
+														===========
+
+
+1>> EVERY PRIME NUMBER CAN BE REPRESENT AS 6n-1 or 6n+1 EXCEPT  2 and 3!
+
+2>> 2  AND 3 ARE ONLY THE CONSECUTIVE PRIME NUMBER! 
+
+3>> log10(n) REPRESENT LOG TO BASE  10!
+
+4>> 2 IS ONLY A EVEN PRIME NUMBER !
