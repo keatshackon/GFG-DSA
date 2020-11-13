@@ -4,18 +4,20 @@ typedef long long ll;
 
 int main()
 {
-	ll t;
-	cin>>t;
-	int res = 0; 
-	int k = 1;
-	int q = 5;
-	while(q<=t){
-		q = pow(5,k);
-		res += t/q; 
-		k++;
-
+	ll n;
+	cin>>n;
+	int cnt = 0; 
+	for(int i = 5;i <= n; i+=5){
+		if(i % 5 != 0){
+			cnt++;
+		}else {
+			int k = i;
+			while(k){
+				cnt++;
+				k/=5;
+			}	
+		}
 	}
-	cout<<res;
 
-
+	cout<<cnt;
 }
