@@ -2,6 +2,7 @@
 using namespace std;
 typedef long long ll;
 
+// Time Complexity T(n) = o(N)
 int main()
 {
 	int t,n,d,q;
@@ -14,19 +15,13 @@ int main()
 	}
 	int i = 0;
 	 q = d-1;
-	while(i < q){
+	while(i <= q){
 		int temp = v[i];
 		v[i] = v[q];
 		v[q] = temp;
 		i++;
 		q--;
 	}
-
-	for(auto q:v){
-		cout<<q<<" ";
-	}
-
-	cout<<"\n";
 	i = k;
 	int j = v.size() - 1;
 	while(i < j){
@@ -36,12 +31,6 @@ int main()
 		i++;
 		j--;
 	}
-
-	for(auto q:v){
-		cout<<q<<" ";
-	}
-	cout<<"\n";
-
 	i = 0;
 	j = v.size()-1;
 
