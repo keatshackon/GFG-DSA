@@ -1,7 +1,6 @@
 /*
-	return the size of distinct array
+	Return The Size Of Distinct Array!
 */
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -18,7 +17,6 @@ int sizee2(std::vector<ll> &v){
 	}
 	return res;
 }
-
 
 //Time Complexity t(n) = O(n) and Space Complaxity = O(N)
 int  sizee(vector<ll> &v, vector<ll> &temp){
