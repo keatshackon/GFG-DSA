@@ -1,19 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
+
 typedef long long ll;
 
-int fact(ll n){
-	if(n == 0){
-		return 1;
+
+ll natural(ll n){
+	if(n == 0) {   
+		return 0;
 	}
-	return n * fact(n-1);
+	return n + natural(n-1);
 }
 
 
 int main()
 {
-	ll t ;
+	ll t;
 	cin>>t;
-	cout<<fact(t);
+
+	cout<<natural(t);
+
 	return 0;
 }
