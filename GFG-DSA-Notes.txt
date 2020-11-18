@@ -11,6 +11,12 @@
 	2> preOrder
 	3> PostOrder
 
+5>> Quick sort is faster than the Merge sort!
+
+6>> Always prefer the Tail recursion over the Non -Tail recursion approach!
+
+7>> Few function can be converted into Tail recursion from Non-Tail recursion, not all!
+
 =======================================================================================================================================
 														BITWISE OPERATIONS
 														==================
