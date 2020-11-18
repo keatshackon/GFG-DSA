@@ -2,19 +2,18 @@
 using namespace std;
 typedef long long ll;
 
-void print(ll n){
+int fact(ll n){
 	if(n == 0){
-		return;
+		return 1;
 	}
-	cout<<n<<" ";
-	print(n-1);
+	return n*fact(n-1);
 }
+
 
 int main()
 {
-	ll t;
+	ll t ;
 	cin>>t;
-	print(t);
+	cout<<fact(t);
 	return 0;
-
 }
