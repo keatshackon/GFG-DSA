@@ -1,29 +1,40 @@
+/*
+
+	GRAPH :: Implemenation Using  Adjacency Matrix And 
+			Adjacency List!
+
+*/
+
+
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
 
-int one(std::vector<ll> &v){
-	int res = 0;
-	int n = v.size();
-	for(int i=0;i<n;i++){
-		int cur = 0;
-		for(int j=i ;j<n;j++){
-			if(v[j] == 1){
-				cur++;
-			}else{
-				break;
-			}
-		}
-		res = max(cur,res); 
-	}
-	return res;
-}
-
 
 int main()
 {
-	ll n,t;
-	std::vector<ll> v={0,1,1,1,0,1,1};
-	cout<<one(v);
-	return 0;
+	vector<vector<int>> v;
+	int q;
+
+	for (int i = 0; i < vect.size(); i++){
+        for (int j = 0; j < vect[i].size(); j++){
+            v.push_back(v[i][j]);
+        }    
+        cout << endl;
+    }
+
+
+	for(int i = 0; i<2; i++){
+		for(int j = 0;j<3 ; j++){
+			cin>>q;
+			v[i].push_back(q);
+		}
+	}
+
+	for(int i = 0; i < 2; i++){
+		for(int j = 0;j < 3 ; j++){
+			cout<<v[i][j];
+		}
+		cout<<"\n";
+	}
 }
