@@ -17,6 +17,7 @@
 
 7>> Few function can be converted into Tail recursion from Non-Tail recursion, not all!
 
+8>> jagged Array is aaray having different size of column! 
 =======================================================================================================================================
 														BITWISE OPERATIONS
 														==================
