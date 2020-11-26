@@ -22,7 +22,7 @@
 														BITWISE OPERATIONS
 														==================
 
-1>>	If you want to check weather a number is odd or even, check its first bit in binary representation if bit is set bit then it is 	ODD Otherwise Even!
+1>>	If you want to check weather a number is odd or even, check its first bit in binary representation, if bit is set bit then it is ODD Otherwise Even!
 
 2>> If we take ~x(negation of UNSIGNED NUMBER), to find the answer just MINUS THIS NUMBER(X) FROM 4294967295
 	
