@@ -1,26 +1,46 @@
 #include<bits/stdc++.h>
 using namespace std;
+#include<string.h>
 typedef long long ll;
 
 
-void fun(int *arr,int n) {
+int main(){	
 	
-	for(int i = 0; i < n; i++){
-		cout<<arr[i]<<" ";
-	}
+
+	1 == 1;
+
+	
+
+	// string s1 = "abc";
+	// string s2 = "def";
+
+	// if(s1 > s2){
+	// 	cout<<"S1 is greater";
+	// }else if(s2 > s1){
+	// 	cout<<"S2 is greater";
+	// }else{
+	// 	cout<<"Same";
+	// }
+
 
 }
 
-int main()
-{
-	int *arr = new int[10];
-	arr[0] = 0;
-	arr[1] = 1;
-	arr[2] = 2;
-	arr[4] = 3;
-	arr[5] = 4;
+	// S1 - S2  
 
-	fun(arr,10);
+	// int re = strcmp(s1,s2);
 
-	return 0;
-}
+	// cout<<re<<"\n";
+
+	// if(re > 0){
+
+	// 	cout<<"s1 is Greater";
+
+	// }
+	// else if(re == 0){
+
+	// 	cout<<"Same";
+
+	// }else{
+
+	// 	cout<<"s2 is Greater";
+	// }
