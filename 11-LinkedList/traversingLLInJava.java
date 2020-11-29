@@ -19,12 +19,12 @@ class newLL{
 		h3.next = h4;
 		h4.next = h5;
 
-		newLL trav = new newLL();
-		trav.print(h1);
+		
+		print(h1);
 
 	}
 
-	void print(Node head){
+	public static void print(Node head){
 		while(head != null){
 			if(head.next == null){
 				System.out.print(head.data); 
