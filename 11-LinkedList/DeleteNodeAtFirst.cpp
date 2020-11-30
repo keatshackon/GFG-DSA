@@ -21,7 +21,9 @@ void print(Node *head){
 }
 
 void deleteNode(Node *h1){
-	print(h1->next);
+	Node *temp = h1->next;
+	delete h1;
+	print(temp);
 }
 
 
