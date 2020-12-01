@@ -1,8 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-typedef long long ll;;
-
-
+typedef long long ll;
 
 	/*
 	   head                                    tail
@@ -64,7 +62,4 @@ int main()
 	return 0;
 
 }
-
-
-
 
