@@ -6,36 +6,31 @@ struct Node
 {
 	int data;
 	Node *next;
-	Node(int x)
-	{
+	Node(int x){
 		data = x;
 		next = NULL;
 	}
-
 };
 
 void print(Node *head){
-	
 	Node *cur = head;
 	cout<<cur->data<<" ";
 	cur = cur->next;
 	while(cur != head){
 		cout<<cur->data<<" ";
-		cur = cur-> next;
+		cur = cur->next;
 	}
-
 }
 
 Node *createCLL(){
-	Node *temp = NULL, *q, *r = NULL;
-	int res =0 ,n = 0;
+	Node *temp = NULL,*r = NULL,*q = NULL;
+	int res = 0,n = 0,f = 1;
 	cin>>n;
-	int f = 1;
 	while(n--){
 		if(r == NULL){
 			cin>>res;
 			r = new Node(res);
-			temp = r ;
+			temp = r; 	
 			f = 0;
 		}else{
 			cin>>res;
@@ -43,34 +38,32 @@ Node *createCLL(){
 			r -> next = q;
 			r = q;
 			f = 0;
-
 		}
-	}
-	if(f == 0)
-		r -> next = temp;
 
+	} 
+	if(f == 0){
+		r->next = temp;
+	}
 	return temp;
+
 }
 
 int main()
 {
 	Node *head = createCLL();
 	if(head == NULL){
-		int x;
-		cin>>x;
-		Node *res = new Node(x);
-		res->next = res;
-		print(res);
+		return 0;
+	}else if(head == head->next){
+		delete head;
+		cout<<"Last Node deleted";
 	}else{
-		int x;
-		cin>>x;
-		Node *res = new Node(x);
-		res->next = head->next;
-		head->next = res; 
-		int temp = head->data;
-		head->data = res->data;
-		res->data = temp; 
-		print(head->next);
+		Node *cur = head;
+		while(cur->next->next != head){
+			cur = cur -> next;
+		}
+		delete cur->next;
+		cur->next = NULL;
+		cur -> next = head;
+		print(head);
 	}
-
 }
