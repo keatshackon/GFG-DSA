@@ -16,8 +16,6 @@ typedef long long ll;;
 
 	*/
 
-
-
 struct Node
 {
 	int data;
