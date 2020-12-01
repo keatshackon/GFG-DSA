@@ -15,15 +15,16 @@ struct Node
 };
 
 Node *createDLL(){
-	Node *temp,*q,*r;
+	Node *temp,*q,*r = NULL;
 	int n,res = 0;
 	cin>>n;
 	while(n--){
-		cin>>res;
+		
 		if( r == NULL){
+			cin>>res;
 			r = new Node(res);
-			r.next = NULL;
-			r.prev = NULL;
+			r->next = NULL;
+			r->prev = NULL;
 			temp = r;
 
 		}else{
@@ -47,14 +48,14 @@ void print(Node *head){
 	}
 }
 
-void insertHead(Node *head,int x){
+void deleteNode(Node *head){
 	if(head == NULL){
 		print(head);
 	}else{
-		Node *temp = next Node(x);
-		temp->next =  head;
-		head->prev =  temp;
-		temp->prev = NULL;
+		Node *temp = head->next;
+		delete head;
+		temp->prev =  NULL;
+		
 		print(temp);
 	}
 }
@@ -62,7 +63,7 @@ void insertHead(Node *head,int x){
 int main()
 {	
 	Node *head = createDLL();
-	insertHead(head);
+	deleteNode(head);
 	return 0;
 
 
